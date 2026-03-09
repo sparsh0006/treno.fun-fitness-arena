@@ -7,6 +7,7 @@ import SlideArchitecture from "./slides/SlideArchitecture";
 import SlideSecurity from "./slides/SlideSecurity";
 import SlideVision from "./slides/SlideVision";
 import ProgressBar from "./ProgressBar";
+import Starfield from "./Starfield";
 
 const slides = [SlideIntro, SlideProblem, SlideHowItWorks, SlideArchitecture, SlideSecurity, SlideVision];
 
@@ -38,9 +39,9 @@ export default function PitchDeck() {
   const CurrentSlide = slides[index];
 
   return (
-    <div className="relative min-h-screen bg-background overflow-hidden select-none">
+    <div className="relative min-h-screen overflow-hidden select-none" style={{ background: "linear-gradient(180deg, #050505 0%, #0b0b0b 100%)" }}>
+      <Starfield />
       {/* Background glow */}
-      <div className="fixed inset-0 glow-radial pointer-events-none" />
       <div className="fixed inset-0 glow-radial-top pointer-events-none" />
 
       <ProgressBar current={index} total={slides.length} />

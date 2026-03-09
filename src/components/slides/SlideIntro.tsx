@@ -26,9 +26,9 @@ export default function SlideIntro() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.25 }}
-        className="text-5xl md:text-6xl font-bold neon-text leading-tight"
+        className="text-5xl md:text-5xl font-bold neon-text leading-tight"
       >
-        Bet on Your Fitness Goals with Solana.
+        Stake your sweat. Or get liquidated..
       </motion.h1>
 
       <motion.p
@@ -37,8 +37,7 @@ export default function SlideIntro() {
         transition={{ delay: 0.4 }}
         className="text-lg md:text-xl text-muted-foreground max-w-2xl"
       >
-        Treno.fun — A decentralized app on Solana where workouts become trustless challenges with real SOL stakes.
-      </motion.p>
+Treno is an app that let's you Stake SOL on your workouts, duel friends, and let the community bet on who crushes their goals. </motion.p>
 
       <motion.div
         initial={{ opacity: 0 }}

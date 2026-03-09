@@ -26,8 +26,7 @@ export default function SlideProblem() {
           <h3 className="text-xl font-semibold neon-text">The Treno Solution</h3>
         </div>
         <p className="text-lg text-foreground/90">
-          Use Solana's blockchain to create challenges where users stake SOL, turning personal fitness into community-driven events with financial outcomes.
-        </p>
+Duel friends in 1v1 challenges and invite the community to bet on the winner. Stake SOL to stay committed and let trustless smart contracts reward your sweat with the prize pool.        </p>
       </motion.div>
     </motion.div>
   );

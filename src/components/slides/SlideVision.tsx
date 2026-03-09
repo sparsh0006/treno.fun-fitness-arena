@@ -12,7 +12,7 @@ export default function SlideVision() {
       </motion.h2>
 
       <motion.p variants={item} className="text-lg text-foreground/90 max-w-3xl mx-auto">
-        Treno turns fitness into a decentralized community arena, fostering long-term habits through Solana's efficient blockchain. Our model includes a 2% protocol fee on pots to fund ongoing development, ecosystem grants, and community rewards — ensuring growth and alignment with Solana's innovative spirit.
+        Treno turns fitness into a decentralized community arena, fostering long-term habits through Solana's efficient blockchain. Our model includes a 2% protocol fee on pots to fund ongoing development, ecosystem grants, and community rewards ensuring growth and alignment with Solana's innovative spirit.
       </motion.p>
 
       <motion.div variants={item}>
@@ -27,7 +27,7 @@ export default function SlideVision() {
           }}
         >
           <Rocket className="w-5 h-5" />
-          Launch your first challenge at Treno.fun
+          Check us out at Treno.fun
         </a>
       </motion.div>
 

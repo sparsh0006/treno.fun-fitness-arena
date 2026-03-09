@@ -7,6 +7,7 @@ import SlideArchitecture from "./slides/SlideArchitecture";
 import SlideSecurity from "./slides/SlideSecurity";
 import SlideVision from "./slides/SlideVision";
 import ProgressBar from "./ProgressBar";
+import Starfield from "./Starfield";
 
 const slides = [SlideIntro, SlideProblem, SlideHowItWorks, SlideArchitecture, SlideSecurity, SlideVision];
 

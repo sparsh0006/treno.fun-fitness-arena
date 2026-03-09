@@ -20,11 +20,20 @@ export default function PitchDeck() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
-  const go = (next: number) => {
+  const go = useCallback((next: number) => {
     if (next < 0 || next >= slides.length) return;
     setDirection(next > index ? 1 : -1);
     setIndex(next);
-  };
+  }, [index]);
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); go(index + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); go(index - 1); }
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [go, index]);
 
   const CurrentSlide = slides[index];
 

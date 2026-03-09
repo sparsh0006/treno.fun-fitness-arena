@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Link as LinkIcon } from "lucide-react";
+import { Zap, Link as LinkIcon, Dumbbell } from "lucide-react";
 
 export default function SlideIntro() {
   return (
@@ -12,7 +12,10 @@ export default function SlideIntro() {
         className="relative"
       >
         <div className="w-32 h-32 rounded-2xl glass-card flex items-center justify-center relative">
-          <span className="text-7xl font-bold neon-text">T</span>
+          {/* <span className="text-7xl font-bold neon-text">T</span> */}
+          {/* <div className="w-16 h-16 rounded-3xl bg-[#00FF87]/10 border border-[#00FF87]/20 flex items-center justify-center shadow-[0_0_15px_rgba(0,255,135,0.15)] group-hover:shadow-[0_0_20px_rgba(0,255,135,0.25)] transition-all"> */}
+            <Dumbbell className="text-[#00FF87]" size={48} />
+          {/* </div> */}
           <Zap className="absolute -top-3 -right-3 w-6 h-6 text-primary" />
           <LinkIcon className="absolute -bottom-3 -left-3 w-5 h-5 text-primary/70" />
         </div>
